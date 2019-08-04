@@ -1,0 +1,214 @@
+html {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+body {
+    background-color: antiquewhite;
+    color: #49734d;
+}
+
+button {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    -webkit-appearance: none;
+    font-size: 1rem;
+    text-shadow: none;
+    line-height: 1.2;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    border-radius: 4px;
+    border: 3px solid transparent;
+    background: green;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none !important;
+    text-align: center;
+    font-weight: normal !important;
+    color: white;
+
+    .green {
+        background: green;
+        color: white;
+    }
+        
+}
+
+
+.login-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 20px 150px 50px;
+    position: relative;
+
+    .login-head {
+        margin: 50px 0 20px 0;
+
+        .login-log {
+            margin: 0 0 0 -6px;
+            font: 0/0 a;
+            background-size: 176px 31px;
+            width: 220px;
+            height: 31px;
+            opacity: 0.5;
+        }
+        .little-big-head {
+            font-size: 2.5rem;
+            margin: 0;
+            color: white;
+            font-family: 'Telefon', Sans-Serif;
+            line-height: 1.5em;
+            font-weight: small;
+            text-transform: capitalize;
+        
+        }
+        
+    }
+
+    .flex-grid {
+        display: flex;
+        margin-left: 10%;
+
+        .login-order-help {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #49734d;
+            opacity: 0.7;
+            margin-top: 40%;
+            cursor: help;
+        }
+
+        .error-message {
+            margin-left: 0;
+            width: 100%;
+            background: #ff3c41;
+            color: white;
+            padding: 5px 10px;
+            margin-left: 7% !important;
+            width: 78%;
+            border-bottom-right-radius: 2px;
+            border-bottom-left-radius: 2px;
+            display: none;
+        }
+        .error-danger {
+            display: inherit;
+        }
+
+        :last-child {
+            margin-right: 0;
+        }
+
+        .login-form {
+            .field {
+                padding-right: 0;
+
+                input {
+                    padding: 8px 12px;
+                    font-size: 1.3rem;
+                    -webkit-appearance: none;
+                    padding: 4px 5px 4px 5px;
+                    outline: 0;
+                    border: 1px solid #d5d7de;
+                    border-radius: 3px;
+                }
+                label {
+                    font-weight: normal;
+                    display: block;
+                    letter-spacing: 0.5px;
+                    cursor: default;
+                }
+            }            
+        }
+
+        .left {
+            padding-right: 10%;
+            width: 36%;
+
+            .left-label-form {
+                div {
+                    margin: 0 0 10px 0;
+                }
+                label {
+                    font-weight: normal;
+                    display: block;
+                    margin: 0 0 3px 0;
+                    letter-spacing: 0.5px;
+                    cursor: default;
+                }
+                                
+            }
+            
+        }
+
+        .right {
+            padding-left: 10%;
+            width: 36%;
+
+            .right-label-form {
+                div {
+                    margin: 0 0 10px 0;
+                }
+                label {
+                    font-weight: normal;
+                    display: block;
+                    letter-spacing: 0.5px;
+                    cursor: default;
+                }
+                                
+            }
+                             
+        }
+
+        .login-divider {
+            width: 0%;
+            position: relative;
+
+            .bar-top {
+                top: 0;
+            }
+
+            .bar.bar-top {
+                width: 2px;
+                height: 61%;
+                position: absolute;
+                background: white;
+                left: -1px;
+            }
+            .login-or {
+                position: absolute;
+                width: 46px;
+                height: 18%;
+                left: -23px;
+                border: 2px solid white;
+                top: 61%;
+                text-align: center;
+                display: flex;
+                border-radius: 10px;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
+                line-height: 30px;
+                color: #49734d;
+            }
+
+            .bar-bottom {
+                bottom: 0;
+            }
+            .bar.bar-bottom {
+                height: 20%;
+                width: 2px;
+                position: absolute;
+                background: white;
+                left: -1px;
+            }
+        }
+        
+    }
+
+
+    
+}

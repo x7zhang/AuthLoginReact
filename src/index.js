@@ -1,4 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<div>First loading...</div>, document.getElementById('root'));
+import { UserContextProvider } from './context/UserContext';
+import AuthRouter from './router/router';
+
+
+ReactDOM.render(
+    <UserContextProvider>
+        <AuthRouter />
+    </UserContextProvider>,
+    document.getElementById('root')
+);

@@ -9,13 +9,14 @@
   ],
   "rules": {
     "react/prop-types": 0,
-    "react-hook/rules-of-hook": 2
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "plugins": [
     "react",
     "import",
     "jsx-a11y",
-    "react-hook"
+    "react-hooks"
   ],
   "parserOptions": {
     "ecmaVersion": 2016,
@@ -29,9 +30,9 @@
     "browser": true,
     "node": true
   },
-  "setting": {
+  "settings": {
     "react": {
-      "version": "dectect"
+      "version": "detect"
     }
   }
 }
