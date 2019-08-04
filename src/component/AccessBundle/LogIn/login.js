@@ -7,20 +7,29 @@
 
 import React, { useState, useEffect, useContext } from 'react';
 import { UserContext } from '../../../context/UserContext';
-import { validation, setCookie } from '../../../util/utils';
+import { validation, setCookie, getCookie } from '../../../util/utils';
 import useForm from '../useForm';
 
 const LogIn = () => {
 
   const { state, dispatch } = useContext(UserContext);
   const [validLogin, setValidLogin] = useState(true);
+  const [getSession, setGetSession] = useState(getCookie('session'));
   const { values, hanleChange, handleSubmit } = useForm('login', toLogin, validation);
 
   useEffect(() => {
     setValidLogin(state.userPassed)
     setCookie('session', state.userPassed, 2)
 
-  }, [state.userPassed])
+  }, [state.userPassed]);
+
+  useEffect(() => {
+    if (getSession) {
+      location.replace('/main');
+    }
+  }, [getSession]);
+
+  console.log('session', getCookie('session'));
 
   function toLogin() {
     dispatch(

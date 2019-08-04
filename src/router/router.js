@@ -7,7 +7,7 @@ import MainPage from '../component/MainPage/index';
 function AuthRouter() {
     return (
         <Router>
-            <AccessBundle target={'signup'} path="/" />
+            <AccessBundle target={'login'} path="/" />
             <MainPage path="/main" />
         </Router>
     )
